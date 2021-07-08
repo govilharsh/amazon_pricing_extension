@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 // mongodb+srv://Samaksh:hamux1234@cluster0.spzon.mongodb.net/amazonext?retryWrites=true&w=majority
 
-mongoose.connect('mongodb+srv://hamux:hamux1234@cluster0.spzon.mongodb.net/amazonext?retryWrites=true&w=majority', {useNewUrlParser: true}).then(console.log("connected")).catch(error => console.log(error));
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -36,3 +35,5 @@ app.post('/',(req,res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+mongoose.connect('mongodb+srv://hamux:hamux1234@cluster0.xc3ar.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true}).then(console.log("connected")).catch(error => console.log(error));
